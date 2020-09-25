@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="row">
+                <p>PoolCarz is an online application which enables users to share rides with 
+                    others you can either book a ride or offer a ride. Did we mention that this 
+                    app is advertisement free ? to add on top of that its free of cost ! So what 
+                    are you waiting for ? Check out the rides available and starts the rides.
+                </p>
+            </div>
+            <div class="row">
+                <button class="btn btn-success col-md-3" (click)="Ride()">Show All Rides</button>
+                <button class="btn btn-primary col-md-3"  >To Office</button>
+                <button class="btn btn-primary col-md-3"  >From Office</button>
+                <button class="btn btn-primary col-md-3"  >Others</button>
+            </div>
+
+            <div *ngIf="showRide" style="margin-top: 8px;">    
+                <div id="caption">Please Select a ride</div>
+                <table class="table table-bordered">  
+                    <tr>
+                        <th>Start Point</th>
+                        <th>End Point</th>
+                        <th>Seats Available</th>
+                    </tr>
+                    <tr *ngFor="let l of ride" >
+                                <td  >{{l.pickUp}}</td>
+                                <td >{{l.Destination}}</td>
+                                <td >{{l.seatsLeft}}</td>
+                    </tr>       
+                </table>
+                <div class="row">
+                    <button class="btn btn-primary col-md-3 offset-md-9">Offer a ride</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
