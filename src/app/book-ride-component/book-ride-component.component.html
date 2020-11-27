@@ -18,12 +18,12 @@
             <div *ngIf="showRide" style="margin-top: 8px;">    
                 <div id="caption">Please Select a ride</div>
                 <table class="table table-bordered">  
-                    <tr>
+                    <tr class="id1">
                         <th>Start Point</th>
-                        <th>End Point</th>
+                        <th>End Point</th> 
                         <th>Seats Available</th>
                     </tr>
-                    <tr *ngFor="let l of ride" >
+                    <tr class="id1" *ngFor="let l of ride" >
                                 <td  >{{l.pickUp}}</td>
                                 <td >{{l.Destination}}</td>
                                 <td >{{l.seatsLeft}}</td>
