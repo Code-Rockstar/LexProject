@@ -7,13 +7,15 @@ import { LoginComponent } from './login/login.component';
 import { BookRideComponentComponent } from './book-ride-component/book-ride-component.component';
 import { MouseHoverDirectiveDirective } from './mouse-hover-directive.directive';
 import { FormsModule } from '@angular/forms';
+import { ToOfficePipe } from './to-office.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     BookRideComponentComponent,
-    MouseHoverDirectiveDirective
+    MouseHoverDirectiveDirective,
+    ToOfficePipe
   ],
   imports: [
     BrowserModule,

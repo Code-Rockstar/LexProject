@@ -10,7 +10,7 @@ import { Login } from './Login';
 export class LoginComponent implements OnInit {
   login =new Login();
   userArray=[
-    {username:'admin',password:'welcome'},
+    {username:'admin',password:'admin'},
     {username:'user2',password:'user2'}
   ]
   loginSuccessful:Boolean
