@@ -15,7 +15,7 @@ export class BookRideComponentComponent implements OnInit {
   showRide:boolean=false
   hover:string='hovering'
   constructor() { }
-
+  name='value'
   ngOnInit(): void {
   }
   Ride(){
